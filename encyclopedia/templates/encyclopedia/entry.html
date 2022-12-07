@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+   {{ titles }}
+{% endblock %}
+
+{% block body %}
+
+{% comment %} show entry title and content with edit link  {% endcomment %}
+<div>
+    {{ title | safe }}
+    <a class="btn btn-primary" name="title" href="edit/{{ edit }}" role="button">Edit</a>
+</div> 
+ 
+{% endblock %}
+

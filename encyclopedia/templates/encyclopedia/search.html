@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+   {{ titles }}
+{% endblock %}
+
+{% comment %} search entries and link to content {% endcomment %} 
+{% block body %}
+    <h1>Search Results</h1>
+  
+    <ul>
+        {% for entry in entries %}
+            <li><a  href="wiki/{{ entry }}">{{ entry }}</a></li>
+
+        {% endfor %}
+    </ul>
+{% endblock %}

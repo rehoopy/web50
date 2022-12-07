@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+   {{ titles }}
+{% endblock %}
+
+{% comment %} error page  {% endcomment %}
+{% block body %}
+
+    <h1>Entry Error</h1>
+    {{ error }}
+    
+{% endblock %}
